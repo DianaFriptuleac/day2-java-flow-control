@@ -1,4 +1,5 @@
 import SwitchPackage.SwitchClass;
+import WhilePackage.WhileClass;
 
 import java.util.Scanner;
 
@@ -22,6 +23,11 @@ public class Main {
         int numero = scanner.nextInt();
         String switchResult = SwitchClass.switchMethod(numero);
         System.out.println("Il numero è " + switchResult);
+
+
+        System.out.println("-------------------------Ex3---------------------------");
+
+        WhileClass.insertString();
     }
 
     //--------------------------Ex1-if-else if-------------------------------
