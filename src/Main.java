@@ -3,6 +3,8 @@ import WhilePackage.WhileClass;
 
 import java.util.Scanner;
 
+import static ForPackage.ForClass.contoAllaRovescia;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("-------------------------Ex1--------------------------");
@@ -28,6 +30,13 @@ public class Main {
         System.out.println("-------------------------Ex3---------------------------");
 
         WhileClass.insertString();
+
+        System.out.println("-------------------------Ex4---------------------------");
+
+       System.out.println("Inserisci un numero per il conto alla rovescia: ");
+       int myNum = scanner.nextInt();
+        contoAllaRovescia(myNum);
+
     }
 
     //--------------------------Ex1-if-else if-------------------------------
