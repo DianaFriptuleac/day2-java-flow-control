@@ -1,3 +1,7 @@
+import SwitchPackage.SwitchClass;
+
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("-------------------------Ex1--------------------------");
@@ -9,6 +13,15 @@ public class Main {
         System.out.println("Anno bisestile o non bisestile");
         int anno = 2024;
         System.out.println(anno + " è un anno " + (annoBisestile(anno) ? "bisestile" : "non bisestile"));
+
+
+        System.out.println("-------------------------Ex2--------------------------");
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Inserisci un numero da 0 a 3: ");
+        int numero = scanner.nextInt();
+        String switchResult = SwitchClass.switchMethod(numero);
+        System.out.println("Il numero è " + switchResult);
     }
 
     //--------------------------Ex1-if-else if-------------------------------
